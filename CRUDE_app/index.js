@@ -11,6 +11,10 @@ dotenv.config();
 const PORT = process.env.PORT || 5000;
 const MONGOURL = process.env.DATABASE_URL;
 
+function deleteThis(){
+  return
+}
+
 mongoose
   .connect(MONGOURL)
   .then(() => {
